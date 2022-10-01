@@ -1,16 +1,16 @@
-var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+const randomNumber1 = Math.trunc(Math.random() * 6) + 1;
 
-var randomDiceImg = "dice" + randomNumber1 + ".png";
+const randomDiceImg = "dice" + randomNumber1 + ".png";
 
-var randomImgSource = "images/" + randomDiceImg;
+const randomImgSource = "images/" + randomDiceImg;
 
-var img1 = document.querySelectorAll("img")[0];
+const img1 = document.querySelectorAll("img")[0];
 
 img1.setAttribute("src", randomImgSource);
 
-var randomNumber2 = Math.floor(Math.random() * 6) + 1;
+const randomNumber2 = Math.trunc(Math.random() * 6) + 1;
 
-var randomImgSource2 = "images/dice" + randomNumber2 + ".png";
+const randomImgSource2 = "images/dice" + randomNumber2 + ".png";
 
 document.querySelectorAll("img")[1].setAttribute("src", randomImgSource2);
 
